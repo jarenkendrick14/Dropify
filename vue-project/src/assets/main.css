@@ -1,0 +1,60 @@
+/* Color Palette from Mockup */
+:root {
+  --carmell-red: #BA1B1D;
+  --selective-yellow: #FFB60A;
+  --gray: #7C7C7C;
+  --white: #FFFFFF;
+  --smoky-black: #0B0A07;
+}
+
+/* Global Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- ADD THIS RULE --- */
+/* This forces the scrollbar to always be present, preventing the page from "jumping" */
+/* when navigating between short pages (like Home) and long pages (like Shop). */
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font-family: 'Share Tech Mono', monospace;
+  background-color: var(--white);
+  color: var(--smoky-black);
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: 'Share Tech Mono', monospace;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+}
+
+input, textarea {
+  font-family: 'Share Tech Mono', monospace;
+  text-transform: uppercase;
+}
